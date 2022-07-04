@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+// import { Theme, ThemeProvider } from '@chakra-ui/core';
+
 import './App.css';
+import EnrollmentForm from './components/EnrollmentForm';
+import FormikContainer from './components/FormikContainer';
+import LoginForm from './components/LoginForm';
+import RegistrationForm from './components/RegistrationForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // <ThemeProvider theme={Theme}>
+    <div className='App'>
+      {/* <FormikContainer /> */}
+      <LoginForm />
+
+      {/* <RegistrationForm /> */}
+      {/* <EnrollmentForm /> */}
     </div>
+    // </ThemeProvider>
   );
 }
 
